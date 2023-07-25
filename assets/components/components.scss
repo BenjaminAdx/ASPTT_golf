@@ -1,0 +1,14 @@
+
+// Style component header+ navbar
+
+.header-image{
+    height: 300px;
+    background-position: 50%;
+    background-image: url("../../public/images/topMenu.jpg");
+}
+
+@layer components {
+    .header {
+        @apply relative overflow-hidden bg-cover bg-no-repeat;
+    }}
+    

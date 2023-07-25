@@ -10,5 +10,9 @@ import './styles/app.scss';
 
 import 'tw-elements';
 
-// Import component navbar js
-import './components/nav';
+// Import components js
+function importAll(r) {
+    r.keys().forEach(r);
+}
+
+importAll(require.context('./components', true, /\.js$/));
