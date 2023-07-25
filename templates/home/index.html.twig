@@ -4,7 +4,9 @@
 {% endblock %}
 
 {% block body %}
-	{{
-	component('navbar')
-		}}
+	<div class="flex flex-row justify-center">
+		{{ component('card_home', {
+	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardTitle: 'Card title',
+})}}</div>
 {% endblock %}
