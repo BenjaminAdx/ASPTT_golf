@@ -1,8 +1,19 @@
+// Style texte général
+
+@layer utilities{
+    .golf-h1{
+        @apply py-4 text-center text-golf-blue text-5xl font-medium leading-tight;
+    }
+    .golf-p{
+        @apply py-2 ml-28 mr-28 text-golf-blue;
+    }
+}
+
 
 // Style component header+ navbar
 
 .header-image{
-    height: 300px;
+    height: 250px;
     background-position: 50%;
     background-image: url("../../public/images/topMenu.jpg");
 }
@@ -29,6 +40,58 @@
     }
     .golf-nav-link-li{
         @apply mb-4 lg:mb-0 lg:pr-2 mr-auto ml-auto;
+    }
+}
+
+// Style component card_home
+
+@layer components{
+    .card_home-div{
+        @apply block w-[30rem] h-[20rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700;
+    }
+    .card_home-div-img{
+        @apply relative overflow-hidden w-full h-[83%];
+    }
+    .card_home-img{
+        @apply rounded-t-lg bg-cover w-full h-full;
+    }
+    .card_home-div-link{
+        @apply absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100;
+    }
+    .card_home-div-title{
+        @apply p-3 bg-golf-blue rounded-b-lg;
+    }
+    .card_home-title{
+        @apply mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50 text-center;
+    }
+}
+
+// Style component carousel + carousel_item
+
+@layer components{
+    .carousel-div-indicators{
+        @apply absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0;
+    }
+    .carousel-button-indicators{
+        @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none;
+    }
+    .carousel-button-controlsl{
+        @apply absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
+    }
+    .carousel-button-controlsr{
+        @apply absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
+    }
+    .carousel-div{
+        @apply relative w-full h-[200px] lg:h-[400px] overflow-hidden after:clear-both after:block after:content-[''];
+    }
+    .carousel-item1-div{
+        @apply relative float-left -mr-[100%] w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none;
+    }
+    .carousel-item-text-div{
+        @apply absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block;
+    }
+    .carousel-itemnext-div{
+        @apply relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none;
     }
 }
     

@@ -4,9 +4,49 @@
 {% endblock %}
 
 {% block body %}
-	<div class="flex flex-row justify-center">
+
+
+	<h1 class="golf-h1">Bienvenue sur le site de l’ASPTT Marseille Golf</h1>
+	<p class="golf-p">« Le golf est un jeu au cours duquel une petite balle de 4,27 cm de diamètre est posée sur une grosse balle de 12600 km de diamètre. Le but du jeu est de frapper la petite balle sans toucher la grosse » John Cunningham (Le Golf n’est qu’un jeu !)</p>
+	<p class="golf-p">Plus sérieusement… Le golf est un sport de plein air où l’on joue avec d’autres joueurs dans un espace toujours magnifique en marchant environ 12km …ou en voiturette électrique. C’est un sport qui se joue face à soi-même, ce qui permet de partager un parcours avec un « champion » sans le gêner. C’est un sport de balistique où précision, concentration, préparation et technicité sont développées.</p>
+	<p class="golf-p">L’association permet de « golfer » sur 12 magnifiques parcours en Provence et de développer une expérience golfique amicale voire sportive, où le plaisir de jouer prime toujours.</p>
+	<p class="golf-p">La section Golf de l’ASPTT Marseille, reconnue par la FFGOLF comme une association sportive, participe aux principaux tournois régionaux et nationaux. Elle consacre une part conséquente à la formation de tous les joueurs via des partenariats avec les principales écoles de golf de la région, mais aussi à la formation aux règles du golf grâce aux deux arbitres fédéraux de la section.</p>
+	<p class="golf-p">La section Golf de notre club ne se résume pas qu’à la simple pratique d’un sport. De nombreux événements sont organisés qui renforcent les liens entre les adhérents.</p>
+	<p class="golf-p">La section Golf de l’ASPTT Marseille organise régulièrement des rencontres internes par équipes pour le plaisir de jouer, des compétitions de classement pour améliorer son index, mais aussi des escapades et des voyages en France et à l’étranger pour découvrir de nouveaux parcours et partager une expérience golfique.</p>
+	<p class="golf-p">Notre Page Facebook : ASPTT Marseille Golf</p>
+	<p class="golf-p">POUR NOUS CONTACTER</p>
+	<p class="golf-p">POUR S’INSCRIRE</p>
+	<div class="flex flex-wrap justify-center py-4 gap-20">
 		{{ component('card_home', {
 	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
-	cardTitle: 'Card title',
-})}}</div>
+	cardTitle: 'Présentation',
+	cardImage: asset('images/vidéo_présentation.png'),
+	cardAlt: 'photo présentation de ASPTT Marseille Golf',
+	})}}
+		{{ component('card_home', {
+	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardTitle: 'Evenements',
+	cardImage: asset('images/Evenement.jpg'),
+	cardAlt: 'photo evenements de ASPTT Marseille Golf',
+	})}}
+		{{ component('card_home', {
+	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardTitle: 'Compétitions',
+	cardImage: asset('images/Competition.jpg'),
+	cardAlt: 'photo compétitions de ASPTT Marseille Golf',
+	})}}
+		{{ component('card_home', {
+	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardTitle: 'Voyages',
+	cardImage: asset('images/voyage.png'),
+	cardAlt: 'photo voyages de ASPTT Marseille Golf',
+	})}}
+		{{ component('card_home', {
+	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardTitle: 'Formations',
+	cardImage: asset('images/Formation-768x374.jpg'),
+	cardAlt: 'photo formation de ASPTT Marseille Golf',
+	})}}</div>
+	<div class="py-4">{{ component('carousel')}}</div>
+
 {% endblock %}

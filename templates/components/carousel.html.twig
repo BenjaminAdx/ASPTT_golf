@@ -1,0 +1,77 @@
+<div
+	id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-carousel-slide>
+	<!--Carousel indicators-->
+	<div class="carousel-div-indicators" data-te-carousel-indicators>
+		<button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0" data-te-carousel-active class="carousel-button-indicators" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1" class="carousel-button-indicators" aria-label="Slide 2"></button>
+		<button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2" class="carousel-button-indicators" aria-label="Slide 3"></button>
+		<button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="3" class="carousel-button-indicators" aria-label="Slide 4"></button>
+		<button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="4" class="carousel-button-indicators" aria-label="Slide 5"></button>
+		<button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="5" class="carousel-button-indicators" aria-label="Slide 6"></button>
+	</div>
+
+	<!--Carousel items-->
+	<div
+		class="carousel-div">
+		<!--First item-->
+		{{ component('carousel_item1', {
+            carouselItemTitle : 'Aix en Provence / Barbaroux',
+            carouselItemImage : asset('images/Aix-en-Provence-1-800x600.jpg'),
+			carouselItemImage2 : asset('images/Barbaroux-Trou15-768x512.jpg'),
+        })}}
+		<!--Second item-->
+		{{ component('carousel_item_next',
+            {
+            carouselItemTitle : "Borely / Cabre d'Or",
+            carouselItemImage : asset('images/Borely-3-768x513.png'),
+			carouselItemImage2 : asset('images/Cabre-d-Or-6-1-768x396.jpeg'),
+        })}}
+		<!--Third item-->
+		{{ component('carousel_item_next',
+            {
+            carouselItemTitle : 'Aix en Provence',
+            carouselItemImage : asset('images/Capture-decran-2023-04-22-110606_DxO-768x321.jpg'),
+			carouselItemImage2 : asset('images/Dolce-Fregate-P-Touron-768x504.jpg'),
+        })}}
+		{# <Fourth item #}
+		{{ component('carousel_item_next',
+            {
+            carouselItemTitle : 'Aix en Provence',
+            carouselItemImage : asset('images/Golf-de-la-Salette-a-Marseille-photo-Trou-15-800x532.png'),
+			carouselItemImage2 : asset('images/Golf-Sainte-Baume-Provence-Trou-2-800x533.jpg'),
+        })}}
+		{# <Fifth item #}
+		{{ component('carousel_item_next',
+            {
+            carouselItemTitle : 'Aix en Provence',
+            carouselItemImage : asset('images/PCC-Saumane-3-1-768x352.jpg'),
+			carouselItemImage2 : asset('images/PontRoyal-trou11-768x432.jpg'),
+        })}}
+		{# <Sixth item #}
+		{{ component('carousel_item_next',
+            {
+            carouselItemTitle : 'Aix en Provence',
+            carouselItemImage : asset('images/Savoie-768x440.jpg'),
+			carouselItemImage2 : asset('images/servanes-hote-suite-3.jpg'),
+        })}}
+	</div>
+
+	<!--Carousel controls - prev item-->
+	<button class="carousel-button-controlsl" type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
+		<span class="inline-block h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+			</svg>
+		</span>
+		<span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+	</button>
+	<!--Carousel controls - next item-->
+	<button class="carousel-button-controlsr" type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
+		<span class="inline-block h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+			</svg>
+		</span>
+		<span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+	</button>
+</div>

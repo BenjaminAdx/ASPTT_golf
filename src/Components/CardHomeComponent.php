@@ -9,4 +9,6 @@ class CardHomeComponent
 {
     public string $cardTitle;
     public string $cardLink;
+    public $cardImage;
+    public string $cardAlt;
 }
