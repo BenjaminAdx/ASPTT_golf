@@ -11,4 +11,25 @@
     .header {
         @apply relative overflow-hidden bg-cover bg-no-repeat;
     }}
+@layer components {
+    .golf-nav{
+        @apply relative flex w-full items-center justify-center bg-golf-blue py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-center;
+    }
+    .golf-nav-button{
+        @apply inline-block rounded-full border-2 border-white px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10;
+    }
+    .golf-nav-div{
+        @apply flex w-full flex-wrap items-center justify-center px-3;
+    }
+    .golf-nav-burger-button{
+        @apply border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden;
+    }
+    .golf-nav-link-ul{
+        @apply mr-auto ml-auto flex flex-col lg:flex-row justify-center;
+    }
+    .golf-nav-link-li{
+        @apply mb-4 lg:mb-0 lg:pr-2 mr-auto ml-auto;
+    }
+}
+    
     
