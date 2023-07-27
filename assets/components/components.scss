@@ -87,12 +87,36 @@
     .carousel-item1-div{
         @apply relative float-left -mr-[100%] w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none;
     }
-    .carousel-item-text-div{
-        @apply absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block;
-    }
     .carousel-itemnext-div{
-        @apply relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none;
+        @apply relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none;
+    }
+    .carousel-item-img{
+        @apply w-0 h-0 min-w-[50%] min-h-full object-cover;
     }
 }
+
+// Style component card_partners
+
+@layer components{
+    .card_partners-div{
+        @apply block w-[32rem] h-[20rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700;
+    }
+    .card_partners-div-img{
+        @apply relative overflow-hidden w-full h-[83%];
+    }
+    .card_partners-img{
+        @apply rounded-t-lg bg-cover w-full h-full;
+    }
+    .card_partners-div-link{
+        @apply absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100;
+    }
+    .card_partners-div-title{
+        @apply p-3 bg-golf-blue rounded-b-lg;
+    }
+    .card_partners-title{
+        @apply mb-2 text-xl font-medium leading-tight text-white dark:text-neutral-50 text-center;
+    }
+}
+
     
     

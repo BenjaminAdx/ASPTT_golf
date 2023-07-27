@@ -15,8 +15,8 @@
 	<p class="golf-p">La section Golf de l’ASPTT Marseille organise régulièrement des rencontres internes par équipes pour le plaisir de jouer, des compétitions de classement pour améliorer son index, mais aussi des escapades et des voyages en France et à l’étranger pour découvrir de nouveaux parcours et partager une expérience golfique.</p>
 	<p class="golf-p">Notre Page Facebook : ASPTT Marseille Golf</p>
 	<p class="golf-p">POUR NOUS CONTACTER</p>
-	<p class="golf-p">POUR S’INSCRIRE</p>
-	<div class="flex flex-wrap justify-center py-4 gap-20">
+	<p class="golf-p border-b">POUR S’INSCRIRE</p>
+	<div class="flex flex-wrap justify-center py-4 gap-20 mt-1">
 		{{ component('card_home', {
 	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
 	cardTitle: 'Présentation',
@@ -47,6 +47,7 @@
 	cardImage: asset('images/Formation-768x374.jpg'),
 	cardAlt: 'photo formation de ASPTT Marseille Golf',
 	})}}</div>
+	<h2 class="mb-4 mt-4 border-b pb-4 text-3xl leading-tight text-golf-blue text-center">Golfs Partenaires</h2>
 	<div class="py-4">{{ component('carousel')}}</div>
 
 {% endblock %}

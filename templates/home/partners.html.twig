@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<h1 class="golf-h1">Les golfs partenaires de l'ASPTT Golf Marseille</h1>
+	<div class="px-5 py-2 lg:px-5 lg:pt-12 mb-10">
+		<div class="-m-1 flex flex-wrap md:-m-2">
+			<div class="flex w-full flex-wrap gap-8 justify-center">
+				{{ component('card_partners', {
+	cardLink: 'http://www.golf-aixenprovence.fr/',
+	cardTitle: 'Aix-en-Provence',
+	cardImage: asset('images/Aix-en-Provence-1-800x600.jpg'),
+	cardAlt: 'photo golf Aix-en-Provence',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.barbaroux.com/',
+	cardTitle: 'Barbaroux',
+	cardImage: asset('images/Barbaroux-Trou15-768x512.jpg'),
+	cardAlt: 'photo golf Barbaroux',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.bastidedelasalette.com/fr/',
+	cardTitle: 'Bastide de la Salette',
+	cardImage: asset('images/Golf-de-la-Salette-a-Marseille-photo-Trou-15-800x532.png'),
+	cardAlt: 'photo golf Bastide de la Salette',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.golflacabredor.fr/',
+	cardTitle: "Cabre d'Or",
+	cardImage: asset('images/Cabre-d-Or-6-1-768x396.jpeg'),
+	cardAlt: "photo golf Cabre d'Or",
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.chateaularcgolfclub.com/',
+	cardTitle: "Château l'Arc",
+	cardImage: asset('images/Chateau-Arc-P-Touron-768x583.jpg'),
+	cardAlt: "photo golf Château l'Arc",
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://golfecoledelair.fr/',
+	cardTitle: "Ecole de l'Air",
+	cardImage: asset('images/Capture-decran-2023-04-22-110606_DxO-768x321.jpg'),
+	cardAlt: "photo golf Ecole de l'Air",
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.lefregateprovence-golfclub.com/',
+	cardTitle: 'Frégate Golf Club',
+	cardImage: asset('images/Dolce-Fregate-P-Touron-768x504.jpg'),
+	cardAlt: 'photo golf Frégate Golf Club',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.golf-pontroyal.com/',
+	cardTitle: 'Pont Royal',
+	cardImage: asset('images/PontRoyal-trou11-768x432.jpg'),
+	cardAlt: 'photo golf Pont Royal',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'http://golfouestprovencemiramas.fr/',
+	cardTitle: 'Ouest Provence Miramas',
+	cardImage: asset('images/Miramas-3-768x512.jpg'),
+	cardAlt: 'photo golf Ouest Provence Miramas',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.golfsaintebaume.com/fr/',
+	cardTitle: 'Sainte Baume Provence',
+	cardImage: asset('images/Golf-Sainte-Baume-Provence-Trou-2-800x533.jpg'),
+	cardAlt: 'photo golf Sainte Baume Provence',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.golfdesaumane.fr/',
+	cardTitle: 'Saumane',
+	cardImage: asset('images/PCC-Saumane-3-1-768x352.jpg'),
+	cardAlt: 'photo golf Saumane',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://www.golfservanes.com/fr/',
+	cardTitle: 'Servanes',
+	cardImage: asset('images/servanes-hote-suite-3.jpg'),
+	cardAlt: 'photo golf Servanes',
+	})}}
+				{{ component('card_partners', {
+	cardLink: 'https://jouer.golf/golf/ugolf-marseille-borely/',
+	cardTitle: 'Marseille Borely',
+	cardImage: asset('images/Borely-3-768x513.png'),
+	cardAlt: 'photo golf Marseille Borely',
+	})}}</div>
+		</div>
+	</div>
+{% endblock %}
