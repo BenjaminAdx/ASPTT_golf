@@ -22,25 +22,25 @@
 			<div class="hidden grow basis-[100%] items-center lg:!flex lg:basis-auto !visible" id="navbarSupportedContentX" data-te-collapse-item>
 				<ul class="golf-nav-link-ul" data-te-navbar-nav-ref>
 					<li class="golf-nav-link-li" data-te-nav-item-ref>
-						<a>{{ component ('navbar_button', { buttonTitle: 'Accueil' })}}</a>
+						<a href="{{ path('home')}}">{{ component ('navbar_button', { buttonTitle: 'Accueil' })}}</a>
 					</li>
 					<li class="golf-nav-link-li" data-te-nav-item-ref>
-						<a>{{ component ('navbar_button', { buttonTitle: 'Nous Connaître' })}}</a>
+						<a href="{{ path('about')}}">{{ component ('navbar_button', { buttonTitle: 'Nous Connaître' })}}</a>
 					</li>
 					<li class="golf-nav-link-li" data-te-nav-item-ref>
-						<a>{{ component ('navbar_button', { buttonTitle: 'Golfs Partenaires' })}}</a>
+						<a href="{{ path('partners')}}">{{ component ('navbar_button', { buttonTitle: 'Golfs Partenaires' })}}</a>
 					</li>
 					<li class="golf-nav-link-li" data-te-nav-item-ref>
-						<a>{{ component ('navbar_button', { buttonTitle: 'Evenements' })}}</a>
+						<a href="{{ path('events')}}">{{ component ('navbar_button', { buttonTitle: 'Evenements' })}}</a>
 					</li>
 					<li class="golf-nav-link-li" data-te-nav-item-ref>
-						<a>{{ component ('navbar_button', { buttonTitle: 'Competitions' })}}</a>
+						<a href="{{ path('tournaments')}}">{{ component ('navbar_button', { buttonTitle: 'Competitions' })}}</a>
 					</li>
 					<li class="golf-nav-link-li" data-te-nav-item-ref>
-						<a>{{ component ('navbar_button', { buttonTitle: 'Voyages' })}}</a>
+						<a href="{{ path('travels')}}">{{ component ('navbar_button', { buttonTitle: 'Voyages' })}}</a>
 					</li>
 					<li class="golf-nav-link-li" data-te-nav-item-ref>
-						<a>{{ component ('navbar_button', { buttonTitle: 'Formations' })}}</a>
+						<a href="{{ path('training')}}">{{ component ('navbar_button', { buttonTitle: 'Formations' })}}</a>
 					</li>
 				</ul>
 			</div>

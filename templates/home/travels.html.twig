@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ASPTT Marseille - Voyages
+{% endblock %}
+
+{% block body %}
+	<h1 class="golf-h1">Voyages à l'ASPTT Golf Marseille</h1>
+	<p class="golf-p text-center">Voici quelques exemples de voyages et escapades organisés récemment par l’équipe Voyages de l’association</p>
+	<div class="px-5 py-2 lg:px-5 lg:pt-12 mb-10">
+		<div class="-m-1 flex flex-wrap md:-m-2">
+			<div class="flex w-full flex-wrap gap-8 justify-center">
+				{{ component('card_travel', {
+	cardTitle: 'VALESCURE puis TERRE BLANCHE',
+	cardImage: asset('images/voyage.png'),
+	cardAlt: 'photo voyages Terre Blanche',
+    cardDuration: 'Escapade de 2 jours',
+    cardContent: "A deux heures de route de nos domiciles, découvrez ou redécouvrez un des golfs les plus anciens et majestueux de notre région avec ses pins parasol. Au menu, diner et nuitée plus petit déjeuner à l’hôtel**** de Valescure après y avoir joué. Le lendemain matin départ pour Terre Blanche, un des deux sites métropolitains où les meilleurs pro français s’entrainent… Golf le matin sur le parcours du Château suivi d’un repas sur place.",
+	})}}
+				{{ component('card_travel', {
+	cardTitle: 'MONTPELLIER FONTCAUDE',
+	cardImage: asset('images/Montpellier-Fontcaude.png'),
+	cardAlt: 'photo voyages Montpellier Fontcaude',
+    cardDuration: 'Escapade de 2 jours',
+    cardContent: "Toujours à deux heures de route de nos domiciles, profitez du golf de Fontcaude et de la qualité de son hébergement/restauration (SPA…). Avant de retourner, vous pouvez vous poser à Montpellier situé à 8 km du golf. Ce parcours technique et accessible pour tous niveaux, accueille chaque année des compétitions nationales FFG.",
+	})}}
+				{{ component('card_travel', {
+	cardTitle: 'GAP',
+	cardImage: asset('images/Gap-768x263.jpg'),
+	cardAlt: 'photo voyages Gap',
+    cardDuration: 'Escapade 2 jours',
+    cardContent: "Ce golf magnifique nous laisse découvrir la barre des écrins comme la vallée de Gap. Situé au col Bayard, ces deux jours passés au centre d’oxygénation nous donnent force et vigueur pour continuer de golfer les mois suivants.",
+	})}}
+				{{ component('card_travel', {
+	cardTitle: 'SAVOIE',
+	cardImage: asset('images/Savoie-768x440.jpg'),
+	cardAlt: 'photo voyages Savoie',
+    cardDuration: "Séjour d'une semaine",
+    cardContent: "Pour tous les amoureux de la montagne, de la randonnée et bien sûr du golf, rendez-vous au Pavillon des Fleurs au bord du Lac d’Annecy. Un moment de partage sur des golfs techniques et sportifs à Aix les Bains, Annecy (pas de voiturette autorisée, uniquement des scooters) et Giez.",
+	})}}
+				{{ component('card_travel', {
+	cardTitle: 'FALGOS',
+	cardImage: asset('images/falgos.jpg'),
+	cardAlt: 'photo voyages Falgos',
+    cardDuration: 'Escapade 2 jours',
+    cardContent: "Nous reconduisons ce beau séjour dans un cadre pyrénéen de rêve avec vue sur le pic du Canigou et un hôtel**** avec SPA à volonté. Ce beau parcours de montagne est à découvrir à trois heures de route de Marseille.",
+	})}}
+				{{ component('card_travel', {
+	cardTitle: 'PALS (Catalogne Espagne)',
+	cardImage: asset('images/Pals-1.png'),
+	cardAlt: 'photo voyages PALS',
+    cardDuration: "Séjour d'une semaine",
+    cardContent: "Le précèdent séjour d’une semaine avait tellement été apprécié… qu’il est redemandé ! Au programme cinq parcours de golf : deux fois Pals, Emporda links, Torremirona et Peralada",
+	})}}
+			</div>
+		</div>
+	</div>
+{% endblock %}

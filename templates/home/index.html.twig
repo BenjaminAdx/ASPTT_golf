@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!
+{% block title %}ASPTT Golf Marseille
 {% endblock %}
 
 {% block body %}
@@ -16,38 +16,38 @@
 	<p class="golf-p">Notre Page Facebook : ASPTT Marseille Golf</p>
 	<p class="golf-p">POUR NOUS CONTACTER</p>
 	<p class="golf-p border-b">POUR S’INSCRIRE</p>
-	<div class="flex flex-wrap justify-center py-4 gap-20 mt-1">
+	<div class="flex flex-wrap justify-center py-4 lg:gap-20 mt-1 ml-2 mr-2 gap-8">
 		{{ component('card_home', {
-	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardLink: path('about'),
 	cardTitle: 'Présentation',
 	cardImage: asset('images/vidéo_présentation.png'),
 	cardAlt: 'photo présentation de ASPTT Marseille Golf',
-	})}}
+					})}}
 		{{ component('card_home', {
-	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardLink: path('events'),
 	cardTitle: 'Evenements',
 	cardImage: asset('images/Evenement.jpg'),
 	cardAlt: 'photo evenements de ASPTT Marseille Golf',
 	})}}
 		{{ component('card_home', {
-	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardLink: path('tournaments'),
 	cardTitle: 'Compétitions',
 	cardImage: asset('images/Competition.jpg'),
 	cardAlt: 'photo compétitions de ASPTT Marseille Golf',
 	})}}
 		{{ component('card_home', {
-	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardLink: path('travels'),
 	cardTitle: 'Voyages',
 	cardImage: asset('images/voyage.png'),
 	cardAlt: 'photo voyages de ASPTT Marseille Golf',
 	})}}
 		{{ component('card_home', {
-	cardLink: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+	cardLink: path('training'),
 	cardTitle: 'Formations',
 	cardImage: asset('images/Formation-768x374.jpg'),
 	cardAlt: 'photo formation de ASPTT Marseille Golf',
 	})}}</div>
-	<h2 class="mb-4 mt-4 border-b pb-4 text-3xl leading-tight text-golf-blue text-center">Golfs Partenaires</h2>
+	<h2 class="golf-h2">Golfs Partenaires</h2>
 	<div class="py-4">{{ component('carousel')}}</div>
 
 {% endblock %}

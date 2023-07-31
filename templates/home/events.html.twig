@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ASPTT Marseille - Evenements
+{% endblock %}
+
+{% block body %}
+
+
+	<h1 class="golf-h1">Evenements à l’ASPTT Marseille Golf</h1>
+	<p class="golf-p">Les “Evènements Adhérents” ou “Rencontres Internes” de l’association sont des opportunités pour les membres de se retrouver sur le parcours d’un de nos golfs partenaires.</p>
+	<p class="golf-p">Le plus souvent, une compétition par équipe est organisée sous la forme d’un scramble à la française, où le meilleur tir de l’équipe est retenu pour le coup suivant. Chaque joueur “débutant” ou “champion” joue ainsi sans pression dans une ambiance amicale et conviviale.</p>
+	<p class="golf-p">Ces “Rencontres Internes” se terminent par un repas dans le restaurant du Golf.</p>
+	<p class="golf-p">Les principales rencontres internes sont :</p>
+	<ul class="ml-6 list-disc golf-p">
+		<li>Accueil des nouveaux adhérents : chaque nouvel adhérent, jouant avec son parrain, a ainsi l’opportunité de mieux connaitre l’association et son ambiance.</li>
+		<li>Fête annuelle de l’association : elle regroupe pratiquement l’ensemble de la section , en général l’été. C’est aussi l’occasion de féliciter les vainqueurs de la coupe Arnold Ghinsberg (compétition interne se déroulant sur plusieurs mois)</li>
+		<li>Rencontre de Classement : c’est la seule rencontre en individuel … pour affiner son index !</li>
+		<li>Galette des Rois : un des évènements clé de l’année … généralement en février, pour, après le parcours, déguster ensemble de fameuses galettes et quelques coupes de champagne.</li>
+		<li>Rencontre Caritative : c’est aussi l’occasion de mobiliser les membres de l’association sur des causes importantes (Téléthon…)</li>
+	</ul>
+	<div class="flex flex-wrap justify-center py-4 lg:gap-20 mt-1 ml-2 mr-2 gap-8">
+		<img src="{{asset('images/Evenement.jpg')}}" alt="photo evenements à l'ASPTT Marseille">
+		<img src="{{asset('images/Prix-competition-IMG_0772photo-768x373.jpg')}}" alt="photo remise prix à l'ASPTT Marseille">
+		<img src="{{asset('images/Galette-des-Rois-350x233.jpg')}}" alt="photo logo galette des rois de l'ASPTT Marseille">
+	</div>
+
+{% endblock %}
