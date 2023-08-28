@@ -1,0 +1,130 @@
+{% extends "base.html.twig" %}
+
+{% block title %}ASPTT Golf Marseille Inscription
+{% endblock %}
+
+{% block body %}
+	<div class="p-4 justify-center">
+		<h1 class="golf-h1">Modification du profil</h1>
+		{{ form_start(form) }}
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.name) }}
+			{{ form_label(form.name)}}
+
+			<div>
+				{{ form_errors(form.name) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.firstName) }}
+			{{ form_label(form.firstName)}}
+
+			<div>
+				{{ form_errors(form.firstName) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.address) }}
+			{{ form_label(form.address)}}
+
+			<div>
+				{{ form_errors(form.address) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.cityCode) }}
+			{{ form_label(form.cityCode)}}
+
+			<div>
+				{{ form_errors(form.cityCode) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.city) }}
+			{{ form_label(form.city)}}
+
+			<div>
+				{{ form_errors(form.city) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.homePhone) }}
+			{{ form_label(form.homePhone)}}
+
+			<div>
+				{{ form_errors(form.homePhone) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.mobilePhone) }}
+			{{ form_label(form.mobilePhone)}}
+
+			<div>
+				{{ form_errors(form.mobilePhone) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_label(form.birthdate)}}
+			{{ form_widget(form.birthdate) }}
+
+
+			<div>
+				{{ form_errors(form.birthdate) }}
+			</div>
+		</div>
+		<div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+			{{ form_widget(form.isRetired) }}
+			{{ form_label(form.isRetired)}}
+
+			<div>
+				{{ form_errors(form.isRetired) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.license) }}
+			{{ form_label(form.license)}}
+
+			<div>
+				{{ form_errors(form.license) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.golfIndex) }}
+			{{ form_label(form.golfIndex)}}
+
+			<div>
+				{{ form_errors(form.golfIndex) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_label(form.golfIndexDate)}}
+			{{ form_widget(form.golfIndexDate) }}
+
+
+			<div>
+				{{ form_errors(form.golfIndexDate) }}
+			</div>
+		</div>
+		<div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+			{{ form_widget(form.isClubMember) }}
+			{{ form_label(form.isClubMember)}}
+
+			<div>
+				{{ form_errors(form.isClubMember) }}
+			</div>
+		</div>
+		<div class="relative mb-3" data-te-input-wrapper-init>
+			{{ form_widget(form.comment) }}
+			{{ form_label(form.comment)}}
+
+			<div>
+				{{ form_errors(form.comment) }}
+			</div>
+		</div>
+
+		<div class="text-center lg:text-left">
+			{{ form_row(form.submit) }}
+		</div>
+		{{ form_end(form) }}
+	</div>
+{% endblock %}

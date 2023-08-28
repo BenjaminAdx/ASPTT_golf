@@ -36,7 +36,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     #[ORM\Column]
     #[Assert\NotBlank]
-    private ?string $password = null;
+    private ?string $password = 'password';
 
     #[ORM\Column(length: 50)]
     #[Assert\Length(min: 2, max: 50)]
@@ -66,8 +66,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(nullable: true)]
     private ?int $mobilePhone = null;
 
-    #[ORM\Column(type: Types::DATE_IMMUTABLE)]
-    private ?\DateTimeImmutable $birthdate = null;
+    #[ORM\Column]
+    private ?\DateTime $birthdate = null;
 
     #[ORM\Column]
     private ?bool $isRetired = null;
@@ -78,8 +78,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: Types::DECIMAL, precision: 4, scale: 1, nullable: true)]
     private ?string $golfIndex = null;
 
-    #[ORM\Column(type: Types::DATE_IMMUTABLE, nullable: true)]
-    private ?\DateTimeImmutable $golfIndexDate = null;
+    #[ORM\Column(nullable: true)]
+    private ?\DateTime $golfIndexDate = null;
 
     #[ORM\Column(length: 255)]
     private ?string $known = null;
@@ -96,9 +96,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
 
+    #[ORM\Column]
+    #[Assert\NotNull()]
+    private ?\DateTimeImmutable $updatedAt = null;
+
     public function __construct()
     {
         $this->createdAt = new \DateTimeImmutable();
+        $this->updatedAt = new \DateTimeImmutable();
     }
 
     public function getId(): ?int
@@ -255,12 +260,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getBirthdate(): ?\DateTimeImmutable
+    public function getBirthdate(): ?\DateTime
     {
         return $this->birthdate;
     }
 
-    public function setBirthdate(\DateTimeImmutable $birthdate): static
+    public function setBirthdate(\DateTime $birthdate): static
     {
         $this->birthdate = $birthdate;
 
@@ -303,12 +308,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getGolfIndexDate(): ?\DateTimeImmutable
+    public function getGolfIndexDate(): ?\DateTime
     {
         return $this->golfIndexDate;
     }
 
-    public function setGolfIndexDate(?\DateTimeImmutable $golfIndexDate): static
+    public function setGolfIndexDate(?\DateTime $golfIndexDate): static
     {
         $this->golfIndexDate = $golfIndexDate;
 
@@ -391,6 +396,26 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setCreatedAt(\DateTimeImmutable $createdAt): static
     {
         $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of updatedAt
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set the value of updatedAt
+     *
+     * @return  self
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
 
         return $this;
     }
