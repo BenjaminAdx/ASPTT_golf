@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Article;
+use App\Repository\ArticleRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,7 +18,6 @@ class ArticleController extends AbstractController
         $data = $request->request->all();
         $user = $this->getUser();
         $data2 = [$user->getUserIdentifier() => $data];
-        var_dump($data2);
 
         $jsondata = json_encode($data2);
 
@@ -29,6 +29,14 @@ class ArticleController extends AbstractController
         return $this->render('article/index.html.twig', [
             'article' => $article,
             'formFields' => $formFields,
+        ]);
+    }
+
+    #[Route('/article', name: 'article.all', methods: ['GET'])]
+    public function index(ArticleRepository $articleRepository): Response
+    {
+        return $this->render('article/indexAll.html.twig', [
+            'articles' => $articleRepository->findAll(),
         ]);
     }
 }

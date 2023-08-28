@@ -3,49 +3,49 @@
 	<div class="header header-image"></div>
 	<!-- Navigation bar -->
 	{# <nav class="golf-nav" data-te-navbar-ref>
-																					<div class="golf-nav-div">
-																						<div
-																							class="flex items-center">
-																							<!-- Hamburger menu button -->
-																							<button
-																								class="golf-nav-burger-button" type="button" data-te-collapse-init data-te-target="#navbarSupportedContentX" aria-controls="navbarSupportedContentX" aria-expanded="false" aria-label="Toggle navigation">
-																								<!-- Hamburger menu icon -->
-																								<span class="[&>svg]:w-5">
-																									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7">
-																										<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-																									</svg>
-																								</span>
-																							</button>
-																						</div>
-																			
-																						<!-- Navigation links -->
-																						<div class="hidden grow basis-[100%] items-center lg:!flex lg:basis-auto !visible" id="navbarSupportedContentX" data-te-collapse-item>
-																							<ul class="golf-nav-link-ul" data-te-navbar-nav-ref>
-																								<li class="golf-nav-link-li" data-te-nav-item-ref>
-																									<a href="{{ path('home')}}">{{ component ('navbar_button', { buttonTitle: 'Accueil' })}}</a>
-																								</li>
-																								<li class="golf-nav-link-li" data-te-nav-item-ref>
-																									<a href="{{ path('about')}}">{{ component ('navbar_button', { buttonTitle: 'Nous Connaître' })}}</a>
-																								</li>
-																								<li class="golf-nav-link-li" data-te-nav-item-ref>
-																									<a href="{{ path('partners')}}">{{ component ('navbar_button', { buttonTitle: 'Golfs Partenaires' })}}</a>
-																								</li>
-																								<li class="golf-nav-link-li" data-te-nav-item-ref>
-																									<a href="{{ path('events')}}">{{ component ('navbar_button', { buttonTitle: 'Evenements' })}}</a>
-																								</li>
-																								<li class="golf-nav-link-li" data-te-nav-item-ref>
-																									<a href="{{ path('tournaments')}}">{{ component ('navbar_button', { buttonTitle: 'Competitions' })}}</a>
-																								</li>
-																								<li class="golf-nav-link-li" data-te-nav-item-ref>
-																									<a href="{{ path('travels')}}">{{ component ('navbar_button', { buttonTitle: 'Voyages' })}}</a>
-																								</li>
-																								<li class="golf-nav-link-li" data-te-nav-item-ref>
-																									<a href="{{ path('training')}}">{{ component ('navbar_button', { buttonTitle: 'Formations' })}}</a>
-																								</li>
-																							</ul>
-																						</div>
-																					</div>
-																				</nav> #}
+																									<div class="golf-nav-div">
+																										<div
+																											class="flex items-center">
+																											<!-- Hamburger menu button -->
+																											<button
+																												class="golf-nav-burger-button" type="button" data-te-collapse-init data-te-target="#navbarSupportedContentX" aria-controls="navbarSupportedContentX" aria-expanded="false" aria-label="Toggle navigation">
+																												<!-- Hamburger menu icon -->
+																												<span class="[&>svg]:w-5">
+																													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7">
+																														<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+																													</svg>
+																												</span>
+																											</button>
+																										</div>
+																							
+																										<!-- Navigation links -->
+																										<div class="hidden grow basis-[100%] items-center lg:!flex lg:basis-auto !visible" id="navbarSupportedContentX" data-te-collapse-item>
+																											<ul class="golf-nav-link-ul" data-te-navbar-nav-ref>
+																												<li class="golf-nav-link-li" data-te-nav-item-ref>
+																													<a href="{{ path('home')}}">{{ component ('navbar_button', { buttonTitle: 'Accueil' })}}</a>
+																												</li>
+																												<li class="golf-nav-link-li" data-te-nav-item-ref>
+																													<a href="{{ path('about')}}">{{ component ('navbar_button', { buttonTitle: 'Nous Connaître' })}}</a>
+																												</li>
+																												<li class="golf-nav-link-li" data-te-nav-item-ref>
+																													<a href="{{ path('partners')}}">{{ component ('navbar_button', { buttonTitle: 'Golfs Partenaires' })}}</a>
+																												</li>
+																												<li class="golf-nav-link-li" data-te-nav-item-ref>
+																													<a href="{{ path('events')}}">{{ component ('navbar_button', { buttonTitle: 'Evenements' })}}</a>
+																												</li>
+																												<li class="golf-nav-link-li" data-te-nav-item-ref>
+																													<a href="{{ path('tournaments')}}">{{ component ('navbar_button', { buttonTitle: 'Competitions' })}}</a>
+																												</li>
+																												<li class="golf-nav-link-li" data-te-nav-item-ref>
+																													<a href="{{ path('travels')}}">{{ component ('navbar_button', { buttonTitle: 'Voyages' })}}</a>
+																												</li>
+																												<li class="golf-nav-link-li" data-te-nav-item-ref>
+																													<a href="{{ path('training')}}">{{ component ('navbar_button', { buttonTitle: 'Formations' })}}</a>
+																												</li>
+																											</ul>
+																										</div>
+																									</div>
+																								</nav> #}
 	<!-- Main navigation container -->
 		<nav class="flex-no-wrap relative flex w-full items-center justify-between bg-[#1e78af] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4" data-te-navbar-ref> <div
 			class="flex w-full flex-wrap items-center justify-between px-3">
@@ -63,44 +63,57 @@
 			<!-- Collapsible navigation container -->
 			<div
 				class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContent1" data-te-collapse-item>
-				<!-- Left navigation links -->
-				<ul class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
-					<li
-						class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-						<!-- Dashboard link -->
-						<a class="golf-nav-button" href="{{ path('home')}}" data-te-nav-link-ref>Accueil</a>
-					</li>
-					<li
-						class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-						<!-- Dashboard link -->
-						<a class="golf-nav-button" href="{{ path('about')}}" data-te-nav-link-ref>Nous connaître</a>
-					</li>
-					<li
-						class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-						<!-- Dashboard link -->
-						<a class="golf-nav-button" href="{{ path('partners')}}" data-te-nav-link-ref>Partenaires</a>
-					</li>
-					<li
-						class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-						<!-- Dashboard link -->
-						<a class="golf-nav-button" href="{{ path('events')}}" data-te-nav-link-ref>Evenements</a>
-					</li>
-					<li
-						class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-						<!-- Dashboard link -->
-						<a class="golf-nav-button" href="{{ path('tournaments')}}" data-te-nav-link-ref>Compétitions</a>
-					</li>
-					<li
-						class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-						<!-- Dashboard link -->
-						<a class="golf-nav-button" href="{{ path('travels')}}" data-te-nav-link-ref>Voyages</a>
-					</li>
-					<li
-						class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-						<!-- Dashboard link -->
-						<a class="golf-nav-button" href="{{ path('training')}}" data-te-nav-link-ref>Formations</a>
-					</li>
-				</ul>
+
+				<!-- Left navigation links  connected-->
+				{% if app.user %}
+					<ul class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('article.all')}}" data-te-nav-link-ref>Article</a>
+						</li>
+
+					</ul>
+					<!-- Left navigation links -->
+				{% else %}
+					<ul class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('home')}}" data-te-nav-link-ref>Accueil</a>
+						</li>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('about')}}" data-te-nav-link-ref>Nous connaître</a>
+						</li>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('partners')}}" data-te-nav-link-ref>Partenaires</a>
+						</li>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('events')}}" data-te-nav-link-ref>Evenements</a>
+						</li>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('tournaments')}}" data-te-nav-link-ref>Compétitions</a>
+						</li>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('travels')}}" data-te-nav-link-ref>Voyages</a>
+						</li>
+						<li
+							class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+							<!-- Dashboard link -->
+							<a class="golf-nav-button" href="{{ path('training')}}" data-te-nav-link-ref>Formations</a>
+						</li>
+					</ul>
+				{% endif %}
 			</div>
 
 			<!-- Right elements -->
