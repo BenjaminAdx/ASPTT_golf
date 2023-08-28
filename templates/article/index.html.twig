@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!
+{% endblock %}
+
+{% block body %}
+	<h1>{{ article.title }}</h1>
+	<p>{{ article.content }}</p>
+
+	{% if not formFields is same as([]) %}
+		<form action="{{ path('article', {'id': article.id}) }}" method="post">
+			{% for formField in formFields %}
+				{% include 'components/' ~ formField.type ~ '_type.html.twig' with {'field': formField} %}
+			{% endfor %}
+			<button type="submit">Valider</button>
+		</form>
+	{% endif %}
+{% endblock %}
