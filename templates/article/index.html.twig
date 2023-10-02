@@ -15,4 +15,28 @@
 			<button type="submit">Valider</button>
 		</form>
 	{% endif %}
+	{% if not formData is same as([]) %}
+		<table>
+			<thead>
+				<tr>
+					<th>Nom</th>
+					<th>Prénom</th>
+					{% for field in formFields %}
+						<th>{{ field.name }}</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% for value in formData %}
+					<tr>
+						<td></td>
+						<td></td>
+						{% for item in value %}
+							<td>{{ item }}</td>
+						{% endfor %}
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	{% endif %}
 {% endblock %}

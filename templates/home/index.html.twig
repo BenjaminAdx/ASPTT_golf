@@ -17,7 +17,9 @@
 		<a href="https://www.facebook.com/aspttmarseillegolf/">ASPTT Marseille Golf</a>
 	</p>
 	<p class="golf-p">POUR NOUS CONTACTER</p>
-	<p class="golf-p border-b">POUR S’INSCRIRE</p>
+	<p class="golf-p border-b">
+		<a href="{{ path('security.registration') }}">POUR S’INSCRIRE</a>
+	</p>
 	<div class="flex flex-wrap justify-center py-4 lg:gap-20 mt-1 ml-2 mr-2 gap-8">
 		{{ component('card_home', {
 	cardLink: path('about'),
